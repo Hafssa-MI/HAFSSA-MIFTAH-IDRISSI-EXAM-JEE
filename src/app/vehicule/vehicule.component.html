@@ -1,0 +1,28 @@
+<div class="p-3">
+  <h2>Liste des Véhicules</h2>
+  <div *ngIf="errorMessage" class="alert alert-danger">{{ errorMessage }}</div>
+  <table class="table table-striped table-bordered">
+    <thead class="table-dark">
+    <tr>
+      <th>ID</th>
+      <th>Marque</th>
+      <th>Modele</th>
+      <th>Matricule</th>
+      <th>Prix/Jour</th>
+      <th>Statut</th>
+      <th>Agence</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let v of vehicules">
+      <td>{{ v.id }}</td>
+      <td>{{ v.marque }}</td>
+      <td>{{ v.modele }}</td>
+      <td>{{ v.matricule }}</td>
+      <td>{{ v.prixParJour }} DH</td>
+      <td>{{ v.statut }}</td>
+      <td>{{ v.agence?.nom }}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>

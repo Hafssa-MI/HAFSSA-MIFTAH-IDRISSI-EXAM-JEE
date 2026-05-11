@@ -23,17 +23,17 @@ export class LoginComponent implements OnInit{
   }
 
   handleLogin() {
-    let username=this.formLogin.value.username;
-    let pwd =this.formLogin.value.password;
-    this.authService.login(username,pwd).subscribe({
-      next:data=>{
+    let username = this.formLogin.value.username;
+    let pwd = this.formLogin.value.password;
+    this.authService.login(username, pwd).subscribe({
+      next: data => {
         this.authService.loadProfile(data);
-        this.router.navigateByUrl("/admin");
+        this.router.navigateByUrl("/vehicule");
       },
-      error:err=>{
-        console.log(err)
+      error: err => {
+        console.log(err);
       }
-    })
+    });
   }
 }
 
