@@ -88,15 +88,13 @@ public class SecurityConfig {
                 )
 
                 .authorizeHttpRequests(ar -> ar
-                        .requestMatchers("/api/agences/**").hasAnyAuthority("ADMIN", "AGENT")
+                        .requestMatchers("/api/agences/**").hasAnyAuthority("SCOPE_ADMIN", "SCOPE_AGENT")
                 )
-
                 .authorizeHttpRequests(ar -> ar
-                        .requestMatchers("/api/vehicules/**").hasAnyAuthority("ADMIN", "AGENT")
+                        .requestMatchers("/api/vehicules/**").hasAnyAuthority("SCOPE_ADMIN", "SCOPE_AGENT")
                 )
-
                 .authorizeHttpRequests(ar -> ar
-                        .requestMatchers("/api/locations/**").hasAnyAuthority("ADMIN", "CLIENT")
+                        .requestMatchers("/api/locations/**").hasAnyAuthority("SCOPE_ADMIN", "SCOPE_CLIENT")
                 )
 
                 .authorizeHttpRequests(ar -> ar
