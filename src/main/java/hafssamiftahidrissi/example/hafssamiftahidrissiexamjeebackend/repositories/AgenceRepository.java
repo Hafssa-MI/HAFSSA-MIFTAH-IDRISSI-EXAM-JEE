@@ -3,5 +3,5 @@ package hafssamiftahidrissi.example.hafssamiftahidrissiexamjeebackend.repositori
 import hafssamiftahidrissi.example.hafssamiftahidrissiexamjeebackend.entities.Agence;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface AgenceRepository extends JpaRepository<Agence,Integer> {
+public interface AgenceRepository extends JpaRepository<Agence,Long> {
 }
