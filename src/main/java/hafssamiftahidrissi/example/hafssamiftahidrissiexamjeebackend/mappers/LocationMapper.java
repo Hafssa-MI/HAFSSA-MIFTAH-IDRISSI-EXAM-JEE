@@ -1,7 +1,6 @@
 package hafssamiftahidrissi.example.hafssamiftahidrissiexamjeebackend.mappers;
 
 import hafssamiftahidrissi.example.hafssamiftahidrissiexamjeebackend.dtos.LocationDTO;
-import hafssamiftahidrissi.example.hafssamiftahidrissiexamjeebackend.dtos.locationDTO;
 import hafssamiftahidrissi.example.hafssamiftahidrissiexamjeebackend.entities.location;
 import org.springframework.beans.BeanUtils;
 import org.springframework.stereotype.Service;
